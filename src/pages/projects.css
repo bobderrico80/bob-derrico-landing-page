@@ -1,0 +1,35 @@
+.projects__title {
+  margin-bottom: 2rem;
+  color: var(--brand-color-red);
+}
+
+.projects__project {
+  margin-bottom: 3rem;
+}
+
+.projects__name {
+  font-size: 1.25rem;
+  margin: 0;
+  color: var(--brand-color-orange);
+}
+
+.projects__link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.projects__link-item {
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .projects__link-list {
+    display: block;
+  }
+
+  .projects__feature {
+    font-size: 0.85rem;
+  }
+}

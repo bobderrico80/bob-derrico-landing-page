@@ -1,0 +1,155 @@
+[
+  {
+    "company": "Elsevier, Inc.",
+    "location": "Philadelphia, PA",
+    "roles": [
+      {
+        "title": "Senior Software Engineer",
+        "startDate": "October 2018",
+        "endDate": "April 2021",
+        "responsibilities": [
+          {
+            "description": "Senior UI engineer for ClinicalKey, an online library for physicians and nurses",
+            "accomplishments": [
+              "Provided maintenance and added new features to an existing AngularJS (1.x) and NodeJS/Express application",
+              "Increased unit test coverage within the code bases over 100%",
+              "Wrote accessible, cross-browser code, compatible with versions of IE7 or later",
+              "Integrated with several in-house platform APIs including APIs for authentication, search functionality, and content delivery"
+            ]
+          },
+          {
+            "description": "Performed the role of Tech Lead for a cross-functional team",
+            "accomplishments": [
+              "Regularly coordinated with product, UX, delivery management, and QA leads to define requirements for epics/stories ",
+              "Identified external dependencies and communicated with dependency leads on requirements and timelines",
+              "Lead stand-ups and UI team planning meetings/refinement sessions"
+            ]
+          },
+          {
+            "description": "Provided continuing mentorship for junior- and mid-level developers",
+            "accomplishments": [
+              "Frequently paired with less-senior engineers on both defining requirements and implementing stories ",
+              "Lead several \"mob coding\" sessions for the UI team, facilitating a quick way to cross-train on new skills ",
+              "Provided constructive feedback on code reviews"
+            ]
+          },
+          {
+            "description": "Migrated ClinicalKey's build and development tooling from Grunt to Webpack",
+            "accomplishments": [
+              "Integrated modern-day build tooling into our aging, 5+ year-old code base, allowing the team to make use of ES6+ JavaScript features and React components (through a React2Angular library).",
+              "Decreased build time and bundle size by upgrading, providing for quicker development and deploys, and a decreased initial load time for our customers",
+              "Worked closely with dev-ops and QA engineers to ensure switching build tools did not affect our deployment process or negatively impact customers"
+            ]
+          },
+          {
+            "description": "Lead the integration of Adobe Target, an A/B testing application, in ClinicalKey and other products in the business unit",
+            "accomplishments": [
+              "Replaced an existing (and preferred) A/B testing tool with Adobe Target, which was the company-mandated solution for A/B testing.",
+              "Performed discovery work on how to use the tool, writing detailed documentation for engineers and product team members.",
+              "Cross-trained teams for other products on implementing and using the tool"
+            ]
+          },
+          {
+            "description": "Developed a Chrome extension which provided tooling for working with ClinicalKey, for both engineers and non-engineers alike ",
+            "accomplishments": [
+              "Created an extension that allows quick access to ClinicalKey's various environments, editions, and sub-products",
+              "Internally shared the extension, which is currently used by other ClinicalKey developers and product team members",
+              "Wrote the tool with Typescript and React as a way to learn (and maintain previous learning) on these technologies, while also providing a benefit to my and others' work"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "company": "Dorado Systems, LLC",
+    "location": "Haddonfield, NJ",
+    "roles": [
+      {
+        "title": "Software Engineer",
+        "startDate": "October 2016",
+        "endDate": "September 2018",
+        "responsibilities": [
+          {
+            "description": "Worked on an existing Javascript (NodeJS & jQuery), Java and MySQL web-based terminal emulator",
+            "accomplishments": [
+              "Became a subject matter expert on the application shortly after starting",
+              "Made many code reliability improvements that reduced errors that were occurring several times daily to zero ",
+              "Ensured that the application was cross-browser compatible through IE9"
+            ]
+          },
+          {
+            "description": "Designed and developed a single page application web portal using React",
+            "accomplishments": [
+              "Created clean, well-documented React components using Jest and Enzyme for unit testing",
+              "Incorporated Redux to handle managing application state",
+              "Educated other members of the team on React and Javascript through lunch-and-learns and wiki posts"
+            ]
+          },
+          {
+            "description": "Developed Maven-based Java 8 microservices with Spring Boot and a Postgresql data layer",
+            "accomplishments": [
+              "Wrote well-documented, well-tested code (with JUnit and Mockito)",
+              "Simplified logic by using AWS Lambas and Step Functions to handle asynchronous response delivery via SFTP ",
+              "Made use of Apache Commons Pool to better utilize our connections with Medicare's CMS mainframe system"
+            ]
+          },
+          {
+            "description": "Created an integration testing platform for testing our Java microservices, using Docker, Docker-Compose, and Terraform",
+            "accomplishments": [
+              "Wrote scripts to bring up a local copy of an entire service (or product) stack, closely mirroring the infrastructure of higher environments",
+              "Wrote integration tests on this platform using the NodeJS Chakram testing framework",
+              "Served as an evangelist for the new testing platform, educating other developers (most of whom had minimal Javascript experience) in writing tests and using/enhancing the platform"
+            ]
+          },
+          {
+            "description": "Worked in a team environment using state of the art tools and processes:",
+            "accomplishments": [
+              "Was involved with the entire development lifecycle, from initial design, development, code review, testing, automated deployment and application performance monitoring",
+              "Proficient with tools such as Git, Jenkins, Fisheye/Crucible, Rancher, Kibana, and New Relic ",
+              "Regularly mentored other developers through weekly one-on-one meetings"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "company": "Red Spark (formerly 50onRed)",
+    "location": "Philadelphia, PA",
+    "roles": [
+      {
+        "title": "CMS Developer",
+        "startDate": "September 2015",
+        "endDate": "October 2016",
+        "responsibilities": [
+          {
+            "description": "Created and managed 10 viral content and marketing sites in WordPress, serving over 100K pageviews/day."
+          },
+          {
+            "description": "Improved page performance by putting the content sites behind Akamai’s CDN, cutting down page load times, and increasing session length and pages per session."
+          },
+          {
+            "description": "Developed the company’s current marketing website, transforming designer PSD images into a high-quality, custom-made, responsive WordPress theme, utilizing Twig templating (to separate presentation from business logic), SASS CSS pre- processing, and jQuery."
+          },
+          {
+            "description": "Wrote clean, unit-tested PHP code while developing custom WordPress plugins, including an A/B testing plugin allowing our team to choose more effective page layouts, ultimately increasing our ad impressions by a factor of six."
+          }
+        ]
+      },
+      {
+        "title": "Software Engineering Intern",
+        "startDate": "September 2003",
+        "endDate": "May 2015",
+        "responsibilities": [
+          {
+            "description": "Wrote HTML5, CSS3, JavaScript and Python code to contribute to one of the companies core products, a native ad optimizer, which served 5 million impressions daily."
+          },
+          {
+            "description": "Created MusicBot, a Python Slack bot for in-office music, and easily one of the most active Slack integrations in the company, handling over 400 actions a day."
+          }
+        ]
+      }
+    ]
+  }
+]

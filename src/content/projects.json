@@ -1,0 +1,38 @@
+[
+  {
+    "name": "The Rhythm Randomizer",
+    "url": "https://www.rhythmrandomizer.com",
+    "github": "https://github.com/bobderrico80/rhythm-randomizer-v2",
+    "features": [
+      "A music practice web app building using React and Typescript",
+      "Actively being used by 20K+ monthly active users"
+    ]
+  },
+  {
+    "name": "Bingo Cards",
+    "url": "https://bobderrico80.github.io/bingo/",
+    "github": "https://github.com/bobderrico80/bingo-cards",
+    "features": [
+      "A virtual bingo board built in React with Typescript",
+      "Allows completed bingo boards to be shared via link for verification"
+    ]
+  },
+  {
+    "name": "React HTML Parser",
+    "url": "https://bobderrico80.github.io/react-html-parser/",
+    "github": "https://github.com/bobderrico80/react-html-parser",
+    "features": [
+      "A library for parsing HTML strings into React components",
+      "Published on npm: @bobderrico/react-html-parser"
+    ]
+  },
+  {
+    "name": "Writing Clean JavaScript Tests",
+    "url": "https://docs.google.com/presentation/d/1Q56x1xWtTXyTP8-Zsm6IpBP-oGzJyP5Uye4omdJhRbU/edit?usp=sharing",
+    "github": "https://github.com/bobderrico80/writing-clean-js-tests",
+    "features": [
+      "Slides and notes from a talk I did at the Philadelphia JavaScript Developers Meetup in January of 2019",
+      "Provides a list and examples of 10 common testing mistakes and how to sole them"
+    ]
+  }
+]

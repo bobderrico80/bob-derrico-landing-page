@@ -1,0 +1,32 @@
+.home {
+  font-size: 1.5rem;
+  line-height: 2em;
+  margin: 0 4rem;
+}
+
+.home__paragraph {
+  margin-bottom: 2em;
+}
+
+.home__text-highlight {
+  font-size: 1.25em;
+}
+
+.home__text-highlight--var-1 {
+  color: var(--brand-color-orange);
+}
+
+.home__text-highlight--var-2 {
+  color: var(--brand-color-red);
+}
+
+.home__text-highlight--var-3 {
+  color: var(--brand-color-blue);
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+}

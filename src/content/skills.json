@@ -1,0 +1,84 @@
+[
+  {
+    "category": "Languages",
+    "skills": [
+      {
+        "name": "JavaScript",
+        "icon": "javascript"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "typescript"
+      },
+      {
+        "name": "HTML5",
+        "icon": "html"
+      },
+      {
+        "name": "CSS3",
+        "icon": "css"
+      },
+      {
+        "name": "SASS",
+        "icon": "sass"
+      }
+    ]
+  },
+  {
+    "category": "Frameworks",
+    "skills": [
+      {
+        "name": "Angular",
+        "icon": "angular"
+      },
+      {
+        "name": "React",
+        "icon": "react"
+      },
+      {
+        "name": "NodeJS",
+        "icon": "nodejs"
+      },
+      {
+        "name": "ExpressJS"
+      },
+      {
+        "name": "Tailwind"
+      },
+      {
+        "name": "Gatsby",
+        "icon": "gatsby"
+      }
+    ]
+  },
+  {
+    "category": "Testing",
+    "skills": [
+      {
+        "name": "Jest",
+        "icon": "jest"
+      },
+      {
+        "name": "Jasmine",
+        "icon": "jasmine"
+      },
+      {
+        "name": "Karma",
+        "icon": "karma"
+      }
+    ]
+  },
+  {
+    "category": "Tools",
+    "skills": [
+      {
+        "name": "Webpack",
+        "icon": "webpack"
+      },
+      {
+        "name": "Git",
+        "icon": "git"
+      }
+    ]
+  }
+]

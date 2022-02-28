@@ -1,0 +1,9 @@
+.link__external-icon {
+  display: inline;
+  position: relative;
+  top: -0.25em;
+  margin-left: 0.25em;
+  width: 0.75em;
+  height: 0.75em;
+  fill: var(--brand-color-green);
+}
