@@ -10,7 +10,7 @@
   margin-bottom: 4rem;
 }
 
-.header__title::after {
+.header__blinking-cursor {
   content: '_';
   animation: cursor-blink 1s steps(2) infinite;
   color: var(--brand-color-green);
@@ -33,11 +33,15 @@
   margin-right: 2rem;
 }
 
-.header__nav-link--current::before {
+.header__nav-link {
+  margin-right: 0.5em;
+}
+
+.header__nav-current-link-indicator {
+  color: var(--brand-color-green);
   display: inline-block;
   position: absolute;
   left: -1em;
-  content: '>';
 }
 
 .header__nav-trigger {

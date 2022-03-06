@@ -34,14 +34,16 @@ const CareerPage = () => {
                           </dd>
                         </div>
 
-                        <div className="career__end-date-container career__date-container">
-                          <dt className="career__end-date-label career__date-label">
-                            End State:
-                          </dt>
-                          <dd className="career__end-date-list career__date-value">
-                            {role.endDate}
-                          </dd>
-                        </div>
+                        {role.endDate && (
+                          <div className="career__end-date-container career__date-container">
+                            <dt className="career__end-date-label career__date-label">
+                              End Date:
+                            </dt>
+                            <dd className="career__end-date-list career__date-value">
+                              {role.endDate}
+                            </dd>
+                          </div>
+                        )}
                       </dl>
                     </div>
                     <ul className="career__responsibilities">

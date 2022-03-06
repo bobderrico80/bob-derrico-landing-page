@@ -53,7 +53,12 @@ const Header = ({ currentSlug }: HeaderProps) => {
 
   return (
     <header className="header">
-      <h1 className="header__title">Bob D'Errico - Software&nbsp;Engineer</h1>
+      <h1 className="header__title">
+        Bob D'Errico - Software&nbsp;Engineer
+        <span className="header__blinking-cursor" aria-hidden={true}>
+          _
+        </span>
+      </h1>
 
       <div className="header__nav-container">
         {mobileMenu ? (
@@ -68,16 +73,24 @@ const Header = ({ currentSlug }: HeaderProps) => {
                     role="none"
                     key={navLink.label}
                   >
+                    {currentSlug === navLink.slug && (
+                      <span
+                        className="header__nav-current-link-indicator"
+                        aria-hidden={true}
+                      >
+                        &gt;
+                      </span>
+                    )}
                     <Link
                       url={navLink.url}
                       role="menuitem"
-                      className={classNames({
-                        'header__nav-link--current':
-                          navLink.slug === currentSlug,
-                      })}
+                      className="header__nav-link"
                       external={navLink.external}
                     >
                       {navLink.label}
+                      {currentSlug === navLink.slug ? (
+                        <span className="sr-only">(current page)</span>
+                      ) : null}
                     </Link>
                   </li>
                 );

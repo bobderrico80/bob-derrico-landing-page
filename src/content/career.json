@@ -1,5 +1,45 @@
 [
   {
+    "company": "Marlette Funding",
+    "location": "Wilmgington, DE",
+    "roles": [
+      {
+        "title": "Senior Lead Software Engineer",
+        "startDate": "February 2022",
+        "responsibilities": [
+          {
+            "description": "Lead the frontend development of our credit card application site"
+          }
+        ]
+      },
+      {
+        "title": "Senior Software Engineer",
+        "startDate": "April 2021",
+        "endDate": "February 2022",
+        "responsibilities": [
+          {
+            "description": "Lead the development of the next generation version of our internal agent desktop application",
+            "accomplishments": [
+              "Worked closely with product owners and operations specialists on refining requirements",
+              "Wrote clean, maintainable, well-tested code in Angular 11+ and Angular Material",
+              "Created a mock backend in NodeJS/Express/MongoDB for ease in local development and testing",
+              "Mentored junior engineers on coding best practices",
+              "Coordinated with backend engineers on API contracts"
+            ]
+          },
+          {
+            "description": "Added several new features to our customer service website",
+            "accomplishments": [
+              "Worked with backend engineers and product owners to implement statement and payoff quote PDF downloads",
+              "Increased unit test coverage within the code base",
+              "Discovered and catalogued web accessibility issues, enabling other frontend developers to improve the overall accessibility of the customer service website"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "company": "Elsevier, Inc.",
     "location": "Philadelphia, PA",
     "roles": [
