@@ -4,13 +4,31 @@ import Layout from '../components/layout';
 import data from '../content/career.json';
 import './career.css';
 
+interface ResponsibilityItem {
+    description: string;
+    accomplishments?: string[];
+}
+
+interface RoleItem {
+    title: string;
+    startDate: string;
+    endDate?: string;
+    responsibilities: ResponsibilityItem[];
+}
+
+interface CareerHistoryItem {
+    company: string;
+    location: string;
+    roles: RoleItem[];
+}
+
 const CareerPage = () => {
   return (
     <Layout title="Career History" currentSlug="career">
       <div className="career">
         <h2 className="career__title">Career History</h2>
 
-        {data.map((company) => {
+        {(data as CareerHistoryItem[]).map((company) => {
           return (
             <section key={company.company}>
               <div className="career__company-container">
@@ -52,12 +70,12 @@ const CareerPage = () => {
                           <li
                             className={classNames('career__responsibility', {
                               'career__responsibility--with-children':
-                                responsibility?.accomplishments?.length > 0,
+                                responsibility?.accomplishments?.length && responsibility.accomplishments.length > 0,
                             })}
                             key={responsibility.description}
                           >
                             {responsibility.description}
-                            {responsibility?.accomplishments?.length > 0 && (
+                            {responsibility?.accomplishments?.length && responsibility.accomplishments.length > 0 && (
                               <ul className="career__accomplishments">
                                 {responsibility.accomplishments.map(
                                   (accomplishment) => {
