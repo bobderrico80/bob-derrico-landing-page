@@ -13,11 +13,21 @@
     "url": "https://bobderrico80.github.io/bingo/",
     "github": "https://github.com/bobderrico80/bingo-cards",
     "features": [
-      "A virtual bingo board built in React with Typescript",
-      "Allows completed bingo boards to be shared via link for verification"
+      "A virtual bingo card built in React with Typescript",
+      "Allows completed bingo card to be shared via link for verification"
     ]
   },
   {
+    "name": "Bingo Board",
+    "url": "http://bingoboard.s3-website-us-east-1.amazonaws.com/",
+    "github": "https://github.com/bobderrico80/bingo-board",
+    "features": [
+      "A virtual bingo board built in Angular version 16",
+      "Allows called bingo numbers to be virtually tracked and displayed for players"
+    ]
+  },
+  {
+    "hideFromPrintResume": true,
     "name": "React HTML Parser",
     "url": "https://bobderrico80.github.io/react-html-parser/",
     "github": "https://github.com/bobderrico80/react-html-parser",

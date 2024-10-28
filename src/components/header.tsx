@@ -1,4 +1,3 @@
-import classNames from 'classnames';
 import React, { useEffect, useState } from 'react';
 import './header.css';
 import Link from './link';
@@ -54,7 +53,7 @@ const Header = ({ currentSlug }: HeaderProps) => {
   return (
     <header className="header">
       <h1 className="header__title">
-        Bob D'Errico - Software&nbsp;Engineer
+        Robert D'Errico - Software&nbsp;Engineer
         <span className="header__blinking-cursor" aria-hidden={true}>
           _
         </span>

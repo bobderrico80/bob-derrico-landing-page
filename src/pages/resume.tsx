@@ -105,7 +105,7 @@ const ResumePage = () => {
               );
             })}
         </section>
-        <section className="resume__section">
+        <section className="resume__section" style={{ breakBefore: 'page' }}>
           <h2 className="resume__section-header">Projects</h2>
           {(projectData as ProjectsItem[])
             .filter((item) => !item.hideFromPrintResume)
