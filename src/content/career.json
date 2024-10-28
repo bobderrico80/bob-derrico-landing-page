@@ -1,14 +1,54 @@
 [
   {
-    "company": "Marlette Funding",
-    "location": "Wilmgington, DE",
+    "company": "Best Egg",
+    "location": "Wilmington, DE",
     "roles": [
       {
-        "title": "Senior Lead Software Engineer",
+        "title": "Director of Software Engineering I",
         "startDate": "February 2022",
         "responsibilities": [
           {
-            "description": "Lead the frontend development of our credit card application site"
+            "description": "Served as tech lead for a cross-functional team",
+            "accomplishments": [
+              "Worked closely with a product manager, UX designers/researchers, frontend and backend engineers, and data analysts to focus on our product offers and conversion experience",
+              "Led standups and managed our team's Jira board with the assistance of our delivery managers",
+              "Coordinated UAT testing activities and product releases",
+              "Provided technical feasibility analysis during product discovery, created technical designs for new features, and developed and implementation plan using available team resources to quickly deliver on new features and functionality"
+            ]
+          },
+          {
+            "description": "Lead the initial build-out and development of a brand new product",
+            "accomplishments": [
+              "Was part of the initial team to launch our Vehicle Equity Loan product, managing the frontend development",
+              "Worked closely with product owners and UX to ensure project scope was reasonable to meet target dates",
+              "Coordinated with backend engineers on the end-to-end product solution"
+            ]
+          },
+          {
+            "description": "Onboarded and managed four new direct reports",
+            "accomplishments": [
+              "Managed frontend engineers across a variety of product teams",
+              "Set annual goals and performed yearly evaluations with direct reports",
+              "Provided formal and informal mentorship opportunities with junior engineers"
+            ]
+          },
+          {
+            "description": "Lead the frontend development of our personal loan application site",
+            "accomplishments": [
+              "Managed a small team of developers to maintain and add new features to an Angular 12+ application",
+              "Tackled tech debt but ensuring we were using the current LTS version of Angular",
+              "Contributed to the Angular frontend codebase and Python/Django backend codebase"
+            ]
+          },
+          {
+            "description": "Lead the frontend development of our credit card application site",
+            "accomplishments": [
+              "Managed a small team of developers to maintain existing and add new features to an Angular 12+ application",
+              "Improved developer experience by creating a local dev-only backend to mock out the credit card application process and data",
+              "Worked closely with senior backend engineers on new feature development",
+              "Coordinated a rebrand of the entire project with the frontend team",
+              "Designed and refactored the application to make use of our in-house digital analytics solution"
+            ]
           }
         ]
       },
@@ -187,6 +227,31 @@
           },
           {
             "description": "Created MusicBot, a Python Slack bot for in-office music, and easily one of the most active Slack integrations in the company, handling over 400 actions a day."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "company": "Various New Jersey public schools",
+    "location": "Southern New Jersey",
+    "roles": [
+      {
+        "title": "Music Teacher",
+        "startDate": "September 2003",
+        "endDate": "June 2015",
+        "responsibilities": [
+          {
+            "description": "Served as a music teacher in various elementary, middle and high schools in Southern New Jersey"
+          },
+          {
+            "description": "Taught band, chorus, orchestra, classroom/general music, guitar, and music technology"
+          },
+          {
+            "description": "Taught students in grades 3 through 12"
+          },
+          {
+            "description": "Programmed and conducted annual winter and spring concerts for band, orchestra, and chorus"
           }
         ]
       }

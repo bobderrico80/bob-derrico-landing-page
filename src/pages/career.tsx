@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import data from '../content/career.json';
 import './career.css';
+import { CareerHistoryItem } from '../models/career';
 
 const CareerPage = () => {
   return (
@@ -10,7 +11,7 @@ const CareerPage = () => {
       <div className="career">
         <h2 className="career__title">Career History</h2>
 
-        {data.map((company) => {
+        {(data as CareerHistoryItem[]).map((company) => {
           return (
             <section key={company.company}>
               <div className="career__company-container">
@@ -52,27 +53,29 @@ const CareerPage = () => {
                           <li
                             className={classNames('career__responsibility', {
                               'career__responsibility--with-children':
-                                responsibility?.accomplishments?.length > 0,
+                                responsibility?.accomplishments?.length &&
+                                responsibility.accomplishments.length > 0,
                             })}
                             key={responsibility.description}
                           >
                             {responsibility.description}
-                            {responsibility?.accomplishments?.length > 0 && (
-                              <ul className="career__accomplishments">
-                                {responsibility.accomplishments.map(
-                                  (accomplishment) => {
-                                    return (
-                                      <li
-                                        className="career__accomplishment"
-                                        key={accomplishment}
-                                      >
-                                        {accomplishment}
-                                      </li>
-                                    );
-                                  }
-                                )}
-                              </ul>
-                            )}
+                            {responsibility?.accomplishments?.length &&
+                              responsibility.accomplishments.length > 0 && (
+                                <ul className="career__accomplishments">
+                                  {responsibility.accomplishments.map(
+                                    (accomplishment) => {
+                                      return (
+                                        <li
+                                          className="career__accomplishment"
+                                          key={accomplishment}
+                                        >
+                                          {accomplishment}
+                                        </li>
+                                      );
+                                    }
+                                  )}
+                                </ul>
+                              )}
                           </li>
                         );
                       })}

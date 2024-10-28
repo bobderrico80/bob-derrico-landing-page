@@ -21,6 +21,10 @@
       {
         "name": "SASS",
         "icon": "sass"
+      },
+      {
+        "name": "Python",
+        "icon": "python"
       }
     ]
   },
@@ -48,6 +52,10 @@
       {
         "name": "Gatsby",
         "icon": "gatsby"
+      },
+      {
+        "name": "Django",
+        "icon": "django"
       }
     ]
   },

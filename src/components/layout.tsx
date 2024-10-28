@@ -10,7 +10,7 @@ export interface LayoutProps {
 }
 
 const Layout = ({ children, title, currentSlug }: LayoutProps) => {
-  let resolvedTitle = "Bob D'Errico - Software Engineer";
+  let resolvedTitle = "Robert D'Errico - Software Engineer";
 
   if (title) {
     resolvedTitle = `${title} - ${resolvedTitle}`;
