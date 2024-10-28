@@ -53,27 +53,29 @@ const CareerPage = () => {
                           <li
                             className={classNames('career__responsibility', {
                               'career__responsibility--with-children':
-                                responsibility?.accomplishments?.length && responsibility.accomplishments.length > 0,
+                                responsibility?.accomplishments?.length &&
+                                responsibility.accomplishments.length > 0,
                             })}
                             key={responsibility.description}
                           >
                             {responsibility.description}
-                            {responsibility?.accomplishments?.length && responsibility.accomplishments.length > 0 && (
-                              <ul className="career__accomplishments">
-                                {responsibility.accomplishments.map(
-                                  (accomplishment) => {
-                                    return (
-                                      <li
-                                        className="career__accomplishment"
-                                        key={accomplishment}
-                                      >
-                                        {accomplishment}
-                                      </li>
-                                    );
-                                  }
-                                )}
-                              </ul>
-                            )}
+                            {responsibility?.accomplishments?.length &&
+                              responsibility.accomplishments.length > 0 && (
+                                <ul className="career__accomplishments">
+                                  {responsibility.accomplishments.map(
+                                    (accomplishment) => {
+                                      return (
+                                        <li
+                                          className="career__accomplishment"
+                                          key={accomplishment}
+                                        >
+                                          {accomplishment}
+                                        </li>
+                                      );
+                                    }
+                                  )}
+                                </ul>
+                              )}
                           </li>
                         );
                       })}

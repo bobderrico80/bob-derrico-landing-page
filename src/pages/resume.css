@@ -1,120 +1,120 @@
 .montserrat-normal {
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
-    background-color: white;
-    color: black;
-    font-family: "Montserrat", sans-serif;
+  background-color: white;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
-    color: blue;
+  color: blue;
 }
 
 .resume__main {
-    max-width: 1000px;
-    margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .resume__header {
-    text-align: center;
+  text-align: center;
 }
 
 .resume__name {
-    color: blue;
-    font-weight: 400;
-    font-size: 3rem;
-    margin-bottom: 1rem;
+  color: blue;
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .resume__section-header {
-    color: blue;
-    margin-bottom: 0;
+  color: blue;
+  margin-bottom: 0;
 }
 
 .resume__company-info {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .resume__company {
-    font-size: 1rem;
-    font-weight: 700;
-    margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0;
 }
 
 .resume__location {
-    font-style: italic;
-    margin-bottom: 0;
+  font-style: italic;
+  margin-bottom: 0;
 }
 
 .resume__role-info,
 .resume__project-info,
 .resume__activity-info,
 .resume__education-info {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .resume__role-title {
-    margin-top: 0;
-    font-weight: 700;
-    margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 700;
+  margin-bottom: 0;
 }
 
 .resume__role-dates {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-style: italic;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-style: italic;
 }
 
 .resume__responsibilities-list {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .resume__responsibility-item {
-    margin-top: 1rem;
-    break-inside: avoid-page;
+  margin-top: 1rem;
+  break-inside: avoid-page;
 }
 
 .resume__responsibility-item--has-accomplishments {
-    list-style: none;
-    margin-left: -1rem;
+  list-style: none;
+  margin-left: -1rem;
 }
 
 .resume__accomplishments-item {
-    list-style: disc;
+  list-style: disc;
 }
 
 .resume__project-name,
 .resume__activity-name,
-.resume__education-name{
-    font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.resume__education-name {
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .resume__project-url {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .resume__project-feature-list,
 .resume__activity-accomplishments-list {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .resume__activity-dates,
 .resume__education-dates {
-    font-style: italic;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  font-style: italic;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .resume__education-degree {
-    margin-top: -1rem;
+  margin-top: -1rem;
 }

@@ -115,7 +115,11 @@ const ResumePage = () => {
                   <div className="resume__project-info">
                     <div className="resume__project-name">{project.name}</div>
                     <div className="resume__project-url">
-                      <a href={project.url} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         {project.url}
                       </a>
                     </div>
@@ -175,7 +179,9 @@ const ResumePage = () => {
               return (
                 <div className="resume__education" key={education.name}>
                   <div className="resume__education-info">
-                    <div className="resume__education-name">{education.name}</div>
+                    <div className="resume__education-name">
+                      {education.name}
+                    </div>
                     <div className="resume__education-dates">
                       {education.startDate} - {education?.endDate ?? 'present'}
                     </div>
