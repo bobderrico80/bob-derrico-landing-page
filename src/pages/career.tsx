@@ -3,24 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import data from '../content/career.json';
 import './career.css';
-
-interface ResponsibilityItem {
-    description: string;
-    accomplishments?: string[];
-}
-
-interface RoleItem {
-    title: string;
-    startDate: string;
-    endDate?: string;
-    responsibilities: ResponsibilityItem[];
-}
-
-interface CareerHistoryItem {
-    company: string;
-    location: string;
-    roles: RoleItem[];
-}
+import { CareerHistoryItem } from '../models/career';
 
 const CareerPage = () => {
   return (

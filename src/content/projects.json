@@ -27,6 +27,7 @@
     ]
   },
   {
+    "hideFromPrintResume": true,
     "name": "Writing Clean JavaScript Tests",
     "url": "https://docs.google.com/presentation/d/1Q56x1xWtTXyTP8-Zsm6IpBP-oGzJyP5Uye4omdJhRbU/edit?usp=sharing",
     "github": "https://github.com/bobderrico80/writing-clean-js-tests",
