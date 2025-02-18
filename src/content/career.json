@@ -87,6 +87,7 @@
         "title": "Senior Software Engineer",
         "startDate": "October 2018",
         "endDate": "April 2021",
+        "hideAccomplishmentsFromPrintResume": true,
         "responsibilities": [
           {
             "description": "Senior UI engineer for ClinicalKey, an online library for physicians and nurses",
@@ -149,6 +150,7 @@
         "title": "Software Engineer",
         "startDate": "October 2016",
         "endDate": "September 2018",
+        "hideAccomplishmentsFromPrintResume": true,
         "responsibilities": [
           {
             "description": "Worked on an existing Javascript (NodeJS & jQuery), Java and MySQL web-based terminal emulator",

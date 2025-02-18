@@ -10,6 +10,8 @@ import { ProjectsItem } from '../models/projects';
 import { ActivitiesItem } from '../models/activities';
 import { EducationItem } from '../models/education';
 
+const HIDE_ACTIVITIES_SECTION = true;
+
 const ResumePage = () => {
   return (
     <div className="resume">
@@ -71,29 +73,31 @@ const ResumePage = () => {
                                 className={
                                   'resume__responsibility-item' +
                                   (responsibility.accomplishments &&
-                                  responsibility.accomplishments.length > 0
+                                  responsibility.accomplishments.length > 0 &&
+                                  !role.hideAccomplishmentsFromPrintResume
                                     ? ' resume__responsibility-item--has-accomplishments'
                                     : '')
                                 }
                                 key={responsibility.description}
                               >
                                 {responsibility.description}
-                                {responsibility.accomplishments && (
-                                  <ul className="resume__accomplishments-list">
-                                    {responsibility.accomplishments.map(
-                                      (accomplishment) => {
-                                        return (
-                                          <li
-                                            className="resume__accomplishments-item"
-                                            key={accomplishment}
-                                          >
-                                            {accomplishment}
-                                          </li>
-                                        );
-                                      }
-                                    )}
-                                  </ul>
-                                )}
+                                {responsibility.accomplishments &&
+                                  !role.hideAccomplishmentsFromPrintResume && (
+                                    <ul className="resume__accomplishments-list">
+                                      {responsibility.accomplishments.map(
+                                        (accomplishment) => {
+                                          return (
+                                            <li
+                                              className="resume__accomplishments-item"
+                                              key={accomplishment}
+                                            >
+                                              {accomplishment}
+                                            </li>
+                                          );
+                                        }
+                                      )}
+                                    </ul>
+                                  )}
                               </li>
                             );
                           })}
@@ -105,7 +109,7 @@ const ResumePage = () => {
               );
             })}
         </section>
-        <section className="resume__section" style={{ breakBefore: 'page' }}>
+        <section className="resume__section">
           <h2 className="resume__section-header">Projects</h2>
           {(projectData as ProjectsItem[])
             .filter((item) => !item.hideFromPrintResume)
@@ -141,36 +145,41 @@ const ResumePage = () => {
               );
             })}
         </section>
-        <section className="resume__section">
-          <h2 className="resume__section-header">Activities</h2>
-          {(activitiesData as ActivitiesItem[])
-            .filter((item) => !item.hideFromPrintResume)
-            .map((activity) => {
-              return (
-                <div className="resume__activity" key={activity.name}>
-                  <div className="resume__activity-info">
-                    <div className="resume__activity-name">{activity.name}</div>
-                    <div className="resume__activity-dates">
-                      {activity.startDate} - {activity?.endDate ?? 'present'}
+        {!HIDE_ACTIVITIES_SECTION && (
+          <section className="resume__section">
+            <h2 className="resume__section-header">Activities</h2>
+            {(activitiesData as ActivitiesItem[])
+              .filter((item) => !item.hideFromPrintResume)
+              .map((activity) => {
+                return (
+                  <div className="resume__activity" key={activity.name}>
+                    <div className="resume__activity-info">
+                      <div className="resume__activity-name">
+                        {activity.name}
+                      </div>
+                      <div className="resume__activity-dates">
+                        {activity.startDate} - {activity?.endDate ?? 'present'}
+                      </div>
                     </div>
-                  </div>
 
-                  <ul className="resume__activity-accomplishments-list">
-                    {activity.accomplishments.map((accomplishment) => {
-                      return (
-                        <li
-                          className="resume__activity-accomplishment-list-item"
-                          key={accomplishment}
-                        >
-                          {accomplishment}
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
-              );
-            })}
-        </section>
+                    <ul className="resume__activity-accomplishments-list">
+                      {activity.accomplishments.map((accomplishment) => {
+                        return (
+                          <li
+                            className="resume__activity-accomplishment-list-item"
+                            key={accomplishment}
+                          >
+                            {accomplishment}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                );
+              })}
+          </section>
+        )}
+
         <section className="resume__section">
           <h2 className="resume__section-header">Education</h2>
           {(educationData as EducationItem[])
