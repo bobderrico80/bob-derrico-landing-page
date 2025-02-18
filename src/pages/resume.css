@@ -7,7 +7,8 @@
 .resume__main {
   max-width: 1000px;
   margin: 3rem auto;
-  padding: 0 2rem
+  padding: 0 2rem;
+  font-size: 12px;
 }
 
 .resume__header {
@@ -24,6 +25,7 @@
 .resume__section-header {
   color: var(--brand-color-green);
   margin-bottom: 0;
+  margin-top: 1rem;
 }
 
 .resume__company-info {
@@ -50,6 +52,10 @@
   justify-content: space-between;
 }
 
+.resume__role-info {
+  margin-bottom: 0.5rem;
+}
+
 .resume__role-title {
   margin-top: 0;
   color: var(--brand-color-red);
@@ -67,13 +73,16 @@
 }
 
 .resume__responsibility-item {
-  margin-top: 1rem;
   break-inside: avoid-page;
 }
 
 .resume__responsibility-item--has-accomplishments {
   list-style: none;
   margin-left: -1rem;
+}
+
+:not(.resume__responsibility-item--has-accomplishments) > .resume__responsibility-item {
+  margin-top: 0;
 }
 
 .resume__accomplishments-item {
@@ -86,12 +95,14 @@
   font-weight: bold;
   color: var(--brand-color-red);
   margin-top: 1rem;
-  margin-bottom: 1rem;
+}
+
+.resume__project-info {
+  margin-bottom: 0.5rem;
 }
 
 .resume__project-url {
   margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .resume__project-feature-list,

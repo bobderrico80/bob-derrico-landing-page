@@ -9,6 +9,7 @@ export interface RoleItem {
   title: string;
   startDate: string;
   endDate?: string;
+  hideAccomplishmentsFromPrintResume?: boolean;
   responsibilities: ResponsibilityItem[];
 }
 
